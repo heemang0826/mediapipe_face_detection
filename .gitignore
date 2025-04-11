@@ -1,0 +1,4 @@
+venv_mediapipe/
+__pycache__/
+*.pyc
+outputs/
