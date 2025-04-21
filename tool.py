@@ -132,7 +132,7 @@ def evaluate(
 
     ap = np.trapz(precision, recall)
 
-    print(f"AP@IoU={iou_thre:.2f}={ap:.2f}")
+    print(f"AP@IoU={iou_thre:.2f}={ap:.4f}")
     return precision, recall, ap
 
 
