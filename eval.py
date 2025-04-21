@@ -33,5 +33,5 @@ if __name__ == "__main__":
     gt = parse(gt_dir, type="gt")
     pred = parse(pred_dir, type="pred")
 
-    precision, recall, ap = evaluate(gt, pred, iou_threshold=0.5)
-    save_pr_curve(precision, recall, ap, output_dir)
+    precision, recall, coco_ap = evaluate(gt, pred, iou_thre=0.5, conf_thre=0.01)
+    plot_pr_curve(precision, recall, coco_ap, "pr_curve.jpg")
