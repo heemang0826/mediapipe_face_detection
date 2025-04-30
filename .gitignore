@@ -1,5 +1,5 @@
-venv_mediapipe/
 __pycache__/
-outputs/
+.venv/
+output/
 *.pyc
 *.jpg

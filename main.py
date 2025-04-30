@@ -8,8 +8,9 @@ import mediapipe as mp
 import numpy as np
 from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
-from tool import save_annotations
 from tqdm import tqdm
+
+from tool import save_annotations
 from visualize import visualize
 
 
@@ -30,7 +31,7 @@ def parse_args():
     parser.add_argument(
         "--output",
         type=str,
-        default="outputs/WIDER_val",
+        default="output/WIDER_val",
         help="Path to save annotated images and predictions",
     )
 
